@@ -1,12 +1,55 @@
+/* background */
+
+body{
+    background: url('../images/triangle-mosaic.png');
+}
+
+/* padding */
+
+.m-padded-padding-mini {
+    padding: 0.3em !important;
+}
+
 .m-padded-tb-mini {
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
 }
+
+
+
+.m-padded-tb-tiny {
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
+
+.m-padded-tb-small {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.m-padded-tb{
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.m-padded-tb-large{
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+
+.m-padded-tb-big{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+
+.m-padded-tb-huge{
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+
 .m-padded-tb-massive{
     padding-top: 5em !important;
     padding-bottom: 5em !important;
 }
-
 
 .m-text-thin{
     font-weight: 300 !important;
@@ -16,4 +59,68 @@
 }
 .m-text-lined{
     line-height: 1.8;
+}
+
+.m-opacity-mini{
+    opacity: 0.8 !important; 
+}
+
+/* margin */
+.m-margin-top-small{
+    margin-top: 0.5em !important;
+}
+.m-margin-top{
+    margin-top: 1em !important;
+}
+.m-margin-top-large{
+    margin-top: 2em !important;
+}
+
+.m-margin-tb-tiny{
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+
+/* dispaly */
+.m-inline-blok{
+    display: inline-block !important;
+}
+
+/* color */
+
+.m-black{
+    color: #333 !important;
+}
+
+/* postition */
+.m-right-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.m-mobile-show{
+    display: none !important;
+}
+
+@media screen and (max-width: 768px){
+    .m-mobile-hide{
+        display: none !important;
+    }
+    .m-mobile-show{
+        display: block !important;
+    }
+}
+
+
+.m-container{
+    max-width: 72em !important;
+    margin: auto;
+}
+
+
+.m-container-small{
+    max-width: 60em !important;
+    margin: auto;
 }

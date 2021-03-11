@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="static/css/me.css">
+</head>
+<body>
+
+    <!-- navigation -->
+    <nav class="ui inverted attached segment m-padded-tb-mini">
+        <div class="ui inverted secondary menu stackable">
+            <div>
+                <h2 class="ui header teal">Blog</h2>
+            </div>
+        
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>Home</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>Category</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>Tag</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>Archive</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>About Me</a>
+
+            <div class="right item m-item m-mobile-hide">
+                <div class="ui input transparent inverted"></div>
+                <input type="text" placeholder="Search...">
+                <i class="search link icon"></i>
+                
+            </div>
+        </div>
+        <a href="#" class="ui button menu toggle black m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!-- content -->
+    <div class="m-container-small m-padding-tb-big">
+        <div class="ui container">
+            <div class="ui top attached segment">
+                <div class="ui horizontal link list">
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/100/100" alt="" class="ui avatar image">
+                        <div class="content">
+                            <a href="#" class="header">Jiaming</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar icon"></i> 2017-10-01
+                    </div>
+                    
+                    <div class="item">
+                        <i class="eye icon"></i> 1024
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment">
+                <img src="https://picsum.photos/seed/234/400/200" alt="" class="ui fluid image rounded">                
+            </div>
+            <div class="ui attached segment basic padded">
+                <div class="ui right aligned basic segment">
+                    <div class="ui orange label basic ">Origial</div>
+                </div>
+                
+            
+                <h2 class="ui center aligned header">Bala Bala</h2>
+                <div id="content" class="left aligned">
+                    <p>shdfongon osgnosdngjdsaho </p>
+                </div>
+
+                <!-- label -->
+
+                <div>
+                    <div class="ui basic teal left pointing label">
+                        Python
+                    </div>
+                </div>
+
+                <!-- Donnate -->
+                <div class="ui center aligned segment basic">
+                    <button class="ui orange basic button circular">Donate</button>
+                </div>
+            </div>
+            
+
+            <div class="ui attached positive message">
+                blog info                
+            </div>
+
+            <div class="ui attached segment">
+                comments
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui container inverted center aligned">
+            <div class="ui grid divided inverted stackable mobile reversed">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div href="#" class="item">
+                            <img src="./static/images/wechat_qrcode.jpg" class="ui rounded image" alt="" style="width: 110px;">
+                        </div>      
+                    </div>
+                    
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">New Blogs</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>        
+                    </div>
+                </div>
+
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Contact Me</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email: jiamingli9674@gmail.com</a>
+                        <a href="#" class="item">Github: jiamingli9674</a>      
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">New Blogs</h4>
+                    <p>balabala</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-opacity-mini m-text-spaced">Copyright Jiaming</p>
+        </div>
+
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function(){
+            $('.m-item').toggleClass('m-mobile-hide')
+        })
+    </script>
+</body>
+</html>
