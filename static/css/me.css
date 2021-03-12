@@ -4,6 +4,14 @@ body{
     background: url('../images/triangle-mosaic.png');
 }
 
+
+/* shadow */
+
+.m-shadow-small{
+    -webkit-box-shadow : 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
 /* padding */
 
 .m-padded-padding-mini {
@@ -15,7 +23,10 @@ body{
     padding-bottom: 0.2em !important;
 }
 
-
+.m-padding-rl-responsive{
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+}
 
 .m-padded-tb-tiny {
     padding-top: 0.3em !important;
@@ -110,6 +121,10 @@ body{
     }
     .m-mobile-show{
         display: block !important;
+    }
+    .m-padding-rl-responsive{
+        padding-left: 0em !important;
+        padding-right: 0em !important;
     }
 }
 
