@@ -106,9 +106,9 @@ body{
 
 /* postition */
 .m-right-top{
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
 }
 
 .m-fixed {
