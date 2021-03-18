@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head th:replace="_fragments :: header('Internal Error')">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>500</title>
 </head>
+
 <body>
-    <h1>Internal Error</h1>
+    <nav th:replace="_fragments :: nav(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small"></nav>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="ui container error message m-padded-tb-massive">
+        <h1>500: Sorry, something wrong with the server side :(</h1>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
+
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
+
 </html>

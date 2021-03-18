@@ -1,12 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head th:replace="_fragments :: header('Home')">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Home</title>
 </head>
 <body>
-    <h1>Index Page</h1>
+
+    <!-- navigation -->
+    <nav th:replace="_fragments :: nav(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small"></nav>
+    
+        
+    </nav>
+    <!-- content -->
+    <div class="m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui grid stackable">
+                <!-- left top -->
+                <div class="eleven wide column">
+                    <!-- header -->
+                    <div class="ui segment top attached">
+                        <div class="ui two column grid middle">
+                            <div class="column">
+                                <h3 class="ui teal header">Blog</h3>
+                            </div>
+                            <div class="right aligned column">
+                                Total <h2 class="ui orange header m-inline-blok">14</h2> Blogs
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- content -->
+                    <div class="ui attached segment">
+
+                        <div class="ui segment padded m-padded-tb-big vertical">
+                            <div class="ui grid stackable mobile reversed">
+                                <div class="ui eleven wide column">
+                                    <h3 class="ui header">Do you know what is ....</h3>
+                                    <p>balalv al jldag jdosjog nindig ninisd ninog gnissnogn onosnd nogn </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal link list mini">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/237/100/100" alt="" class="ui avatar image">
+                                                    <div class="content">
+                                                        <a href="#" class="header">Jiaming</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i> 2017-10-01
+                                                </div>
+                                                
+                                                <div class="item">
+                                                    <i class="eye icon"></i> 1024
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="five wide column">
+                                            <a href="#" target='_blank' class="ui label teal basic m-padded-padding-mini">Haha</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/237/800/400" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui segment padded m-padded-tb-big vertical">
+                            <div class="ui grid stackable mobile reversed">
+                                <div class="ui eleven wide column">
+                                    <h3 class="ui header">Do you know what is ....</h3>
+                                    <p>balalv al jldag jdosjog nindig ninisd ninog gnissnogn onosnd nogn </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal link list mini">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/237/100/100" alt="" class="ui avatar image">
+                                                    <div class="content">
+                                                        <a href="#" class="header">Jiaming</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i> 2017-10-01
+                                                </div>
+                                                
+                                                <div class="item">
+                                                    <i class="eye icon"></i> 1024
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="five wide column">
+                                            <a href="#" target='_blank' class="ui label teal basic m-padded-padding-mini">Haha</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/237/800/400" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui segment padded m-padded-tb-big vertical">
+                            <div class="ui grid stackable mobile reversed">
+                                <div class="ui eleven wide column">
+                                    <h3 class="ui header">Do you know what is ....</h3>
+                                    <p>balalv al jldag jdosjog nindig ninisd ninog gnissnogn onosnd nogn </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal link list mini">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/237/100/100" alt="" class="ui avatar image">
+                                                    <div class="content">
+                                                        <a href="#" class="header">Jiaming</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i> 2017-10-01
+                                                </div>
+                                                
+                                                <div class="item">
+                                                    <i class="eye icon"></i> 1024
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="five wide column">
+                                            <a href="#" target='_blank' class="ui label teal basic m-padded-padding-mini">Haha</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/237/800/400" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui segment padded m-padded-tb-big vertical">
+                            <div class="ui grid stackable mobile reversed">
+                                <div class="ui eleven wide column">
+                                    <h3 class="ui header">Do you know what is ....</h3>
+                                    <p>balalv al jldag jdosjog nindig ninisd ninog gnissnogn onosnd nogn </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal link list mini">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/237/100/100" alt="" class="ui avatar image">
+                                                    <div class="content">
+                                                        <a href="#" class="header">Jiaming</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i> 2017-10-01
+                                                </div>
+                                                
+                                                <div class="item">
+                                                    <i class="eye icon"></i> 1024
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="five wide column">
+                                            <a href="#" target='_blank' class="ui label teal basic m-padded-padding-mini">Haha</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/237/800/400" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui segment padded m-padded-tb-big vertical">
+                            <div class="ui grid stackable mobile reversed">
+                                <div class="ui eleven wide column">
+                                    <h3 class="ui header">Do you know what is ....</h3>
+                                    <p>balalv al jldag jdosjog nindig ninisd ninog gnissnogn onosnd nogn </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal link list mini">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/237/100/100" alt="" class="ui avatar image">
+                                                    <div class="content">
+                                                        <a href="#" class="header">Jiaming</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i> 2017-10-01
+                                                </div>
+                                                
+                                                <div class="item">
+                                                    <i class="eye icon"></i> 1024
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="five wide column">
+                                            <a href="#" target='_blank' class="ui label teal basic m-padded-padding-mini">Haha</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/237/800/400" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui segment padded m-padded-tb-big vertical">
+                            <div class="ui grid stackable mobile reversed">
+                                <div class="ui eleven wide column">
+                                    <h3 class="ui header">Do you know what is ....</h3>
+                                    <p>balalv al jldag jdosjog nindig ninisd ninog gnissnogn onosnd nogn </p>
+                                    <div class="ui grid">
+                                        <div class="eleven wide column">
+                                            <div class="ui horizontal link list mini">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/237/100/100" alt="" class="ui avatar image">
+                                                    <div class="content">
+                                                        <a href="#" class="header">Jiaming</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i> 2017-10-01
+                                                </div>
+                                                
+                                                <div class="item">
+                                                    <i class="eye icon"></i> 1024
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="five wide column">
+                                            <a href="#" target='_blank' class="ui label teal basic m-padded-padding-mini">Haha</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/237/800/400" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- footer -->
+                    <div class="ui bottom attached segment">
+                        <div class="ui two column grid middle">
+                            <div class="column">
+                                <a href="#" class="ui mini teal basic button">Prev</a>
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" class="ui mini teal basic button">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- right category -->
+                <div class="five wide column">
+                    <!-- category -->
+                    <div class="ui segments">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column left aligned">
+                                    <i class="idea icon"></i> Category
+                                </div>
+                                
+                                <div class="column right aligned">
+                                    <a href="#" target="_blank">More <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <div class="ui fluid vertical menu stackable">
+                                <a href="#" class="item">
+                                    Studay Dairy
+                                    <div class="ui teal basic left pointing label m-padded-tb-tiny">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    Studay Dairy
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    Studay Dairy
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    Studay Dairy
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    Studay Dairy
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="ui segments m-margin-top-large">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column left aligned">
+                                    <i class="tag icon"></i> Tag
+                                </div>
+                                
+                                <div class="column right aligned">
+                                    <a href="#" target="_blank">More <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margine-tb-tiny">
+                            Python <div class="detail">23</div>
+                            </a>
+
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margine-tb-tiny">
+                                Python <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margine-tb-tiny">
+                                Python <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margine-tb-tiny">
+                                Python <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margine-tb-tiny">
+                                Python <div class="detail">23</div>
+                            </a>
+    
+                        </div>
+                    </div>
+
+                    <!-- Recomand -->
+
+                    <div class="ui segments m-margin-top-large">
+                        <div class="ui secondary segment">
+                            <i class="bookmark icon"></i>Reconmand
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">User Story</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">User Story</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">User Story</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black">User Story</a>
+                        </div>
+                    </div>
+                
+                    <!-- QR Code -->
+                    <h4 class="ui horizontal divider header m-margin-top-large">Scan Me</h4>
+                    <div class="ui card centered"  style="width: 11em;" >
+                        <img th:src="@{images/wechat_qrcode.jpg}" alt="" class="ui rounded image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- footer -->
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        
+    </footer>
+    <div th:replace="_fragments :: scripts">
+
+    </div>
+    <script>
+        $('.menu.toggle').click(function(){
+            $('.m-item').toggleClass('m-mobile-hide')
+        })
+    </script>
 </body>
 </html>
