@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="admin/admin_fragments :: header('Backstage Management')">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backstage Management</title>
+</head>
+<body>
+    
+    <!-- navigation -->
+    <nav th:replace="admin/admin_fragments :: nav_admin(0)"></nav>
+
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="#" class="item">Release</a>
+                <a href="#" class="item">List</a>
+            </div>
+        </div>
+    </div>    
+    
+    
+    <!-- content -->
+    <div class="m-padded-tb-large">
+        <div class="ui container">
+
+            <form action="#"  method="POST" class="ui form segment">
+                <div class="inline fields">
+                    
+                    <div class="field">
+                            <input type="text" name="type">
+                            <i class="dropdown icon"></i>
+                    </div>
+
+                    <div class="field">
+                        <button class="ui teal basic button"><i class="search icon"></i>Search</button>
+                    </div>
+                </div>
+            </form>
+
+            <table class="ui celled table">
+                <thead>
+                    <tr >
+                        <th>Index</th>
+                        <th>Type</th>
+                        <th>Operation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="type, iterStat: ${page.content}">
+                        <td th:text="${iterStat.count}">1</td>
+                        <td th:text="${type.name}">Data Structure</td>
+                        <td>
+                            <a href="#" th:href="@{/admin/types/{id}/edit(id=${type.id})}" class="ui mini teal button">Edit</a>
+                            <a href="#" th:href="@{/admin/types/{id}/delete(id=${type.id})}" class="ui mini red button">Delete</a>
+                        </td>
+                    </tr>
+
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="6">
+                            
+                            <div class="ui left floated pagination menu">
+                                <a th:href="@{admin/types(page=${page.number}-1)}" class="item">Prev</a>
+                                <a th:href="@{admin/types(page=${page.number}+1)}" class="item">Next</a>
+                            </div>
+
+                            <a href="#" th:href="@{/admin/types/add-type}" class="ui right floated teal basic button">
+                                New
+                            </a>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div th:if="${message}!=null" class="ui container animated animate__fadeIn ret_info">
+                
+                <div th:if="${flag}" class="ui message positive">
+                    <div class="header">Success</div>
+                    <i class="ui icon close"></i>
+                    <p th:text="${message}"></p>
+                </div>
+
+                <div th:unless="${flag}" class="ui message negative">
+                    <div class="header">Error</div>
+                    <i class="ui icon close"></i>
+                    <p th:text="${message}"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- footer -->
+    <footer th:replace="admin/admin_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
+    
+    <div th:replace="admin/admin_fragments :: scripts"></div>
+
+    <script>
+        $('.menu.toggle').click(function(){
+            $('.m-item').toggleClass('m-mobile-hide')
+        });
+
+        $('.ui.dropdown').dropdown({
+            on : 'hover'
+        });
+
+        $('.close').click(function(){
+            $('.ret_info').hide('slow');
+        });
+        
+    </script>
+</body>
+</html>

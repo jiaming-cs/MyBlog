@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head th:replace="admin/admin_fragments :: header('Backstage Management')">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backstage Management</title>
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav th:replace="admin/admin_fragments :: nav_admin(0)"></nav>
+        
+    </nav>
+
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="#" class="item">Release</a>
+                <a href="#" class="item">List</a>
+            </div>
+        </div>
+    </div>   
+    
+
+    
+    
+    <!-- content -->
+    <div class="m-padded-tb-large">
+        <div class="ui container">
+            <form id="typeForm" th:action="@{/admin/types}" method="POST" class="ui form">
+                
+                <div class="field">
+                    <div th:unless="${type}" class="ui left labeled input">
+                        <label class="ui teal basic teal label" >Type</label>
+                        <input type="text" name="name" placeholder="Add type here...">
+                    </div>
+                    <div th:if="${type}" class="ui left labeled input">
+                        <label class="ui teal basic teal label" >Type</label>
+                        <input type="text" name="name" th:value="${type.name}">
+                    </div>
+                </div>
+
+                <div class="ui error message" id="errorDiv"></div>
+
+                <div class="ui right aligned container">
+                    <button type="button" class="ui button" onclick="window.history.go(-1)">Back</button>
+                    <button type="submit" class="ui teal button">Add</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer th:replace="admin/admin_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
+    
+    <div th:replace="admin/admin_fragments :: scripts"></div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script th:src="@{/lib/editormd/editormd.min.js}"></script>
+    
+    <script>
+    $().ready(function(){
+        $('#typeForm').validate(
+          {
+            errorLabelContainer: $("#errorDiv"),
+            rules: {
+              name: "required"
+            },
+            messages: {
+              name: "Type can not be empty!"
+            }
+          }
+        );
+      })
+    </script>
+</body>
+</html>

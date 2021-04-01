@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head th:replace="_fragments :: header('Backstage Management')">
+<head th:replace="admin/admin_fragments :: header('Backstage Management')">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +9,7 @@
 <body>
     
     <!-- navigation -->
-    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
-        <div class="ui inverted secondary menu stackable">
-            <div>
-                <h2 class="ui header teal">Backstage Management</h2>
-            </div>
-        
-            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>Home</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>Category</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>Tag</a>
-            <div class="right menu m-item m-mobile-hide">
-                <div class="ui dropdown item ">
-                    <div class="text">
-                        <img src="https://picsum.photos/id/237/100/100" alt="" class="ui avator image">
-                        Jiaming
-                    </div>
-                    <i class="dropdown icon"></i>
-                    <div class="menu">
-                        <a href="#" class="item">Log Out</a>
-                    </div>
-                </div>
-            </div>
-                
-            </div>
-        </div>
-        <a href="#" class="ui button menu toggle black m-right-top m-mobile-show">
-            <i class="sidebar icon"></i>
-        </a>
-    </nav>
+    <nav th:replace="admin/admin_fragments :: nav_admin(0)"></nav>
 
     <div class="ui attached pointing menu">
         <div class="ui container">
@@ -61,7 +34,7 @@
                         <div class="ui selection dropdown">
                             <input type="hidden" name="type">
                             <i class="dropdown icon"></i>
-                            <div class="default text">Category</div>
+                            <div class="default text">Type</div>
                             <div class="menu">
                                 <div class="item" data-value="1">Data Structure</div>
                                 <div class="item" data-value="2">Operating System</div>
@@ -85,7 +58,7 @@
                     <tr>
                         <th></th>
                         <th>Title</th>
-                        <th>Category</th>
+                        <th>Type</th>
                         <th>Recommand</th>
                         <th>Release Time</th>
                         <th>Operation</th>
@@ -158,9 +131,9 @@
         </div>
     </div>
     <!-- footer -->
-    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
+    <footer th:replace="admin/admin_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
     
-    <div th:replace="_fragments :: scripts"></div>
+    <div th:replace="admin/admin_fragments :: scripts"></div>
 
     <script>
         $('.menu.toggle').click(function(){
